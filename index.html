@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revue de presse · Ville de Mandeure</title>
+<meta name="description" content="Recueil des articles de presse consacrés à la ville de Mandeure (25350), classés par catégorie, août 2024 à août 2026.">
+<link rel="stylesheet" href="styles.css?v=12">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero__inner">
+    <p class="hero__eyebrow reveal">Revue de presse</p>
+    <h1 class="hero__title reveal">Ce que la <strong>presse</strong> a écrit sur <strong>Mandeure</strong></h1>
+    <p class="hero__subtitle reveal" style="--reveal-delay:80ms">Recueil des articles parus dans la presse locale et régionale depuis <strong>août 2024</strong>, classés par catégorie et vérifiés individuellement.</p>
+    <div class="hero__update reveal" style="--reveal-delay:120ms">
+      <span class="hero__update-text" id="last-updated">Mise à jour…</span>
+      <button type="button" class="hero__refresh-btn" id="refresh-btn">
+        <svg class="hero__refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 4v5h-5"/></svg>
+        Actualiser
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar__inner">
+    <div class="search" role="search">
+      <label class="sr-only" for="search-input">Rechercher un article par mot-clé</label>
+      <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input class="search__input" type="search" id="search-input" placeholder="Rechercher (mot-clé, source…)" autocomplete="off">
+      <button type="button" class="search__clear" id="search-clear" aria-label="Effacer la recherche">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="toolbar__filters-row">
+      <div class="filters" id="filters" role="group" aria-label="Filtrer par catégorie"></div>
+      <div class="filter-menu">
+        <button type="button" class="filter-menu__trigger" id="filter-menu-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="filter-menu-panel">
+          <svg class="filter-menu__trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M7 12h10M10 19h4"/></svg>
+          <span>Filtres</span>
+          <span class="filter-menu__badge" aria-hidden="true"></span>
+          <svg class="filter-menu__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="filter-menu__panel" id="filter-menu-panel" role="menu" aria-hidden="true">
+          <div class="filter-menu__field">
+            <span class="filter-menu__label" id="period-label">Période</span>
+            <select id="period-select" aria-labelledby="period-label"></select>
+          </div>
+          <div class="filter-menu__field">
+            <span class="filter-menu__label" id="sort-label">Trier par</span>
+            <select id="sort-select" aria-labelledby="sort-label"></select>
+          </div>
+          <button type="button" class="filter-menu__reset" id="filter-menu-reset">Réinitialiser</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="results-meta" id="results-meta" aria-live="polite"></p>
+
+<main class="article-section">
+  <div class="article-grid" id="article-grid"></div>
+  <div class="empty-state" id="empty-state" hidden>
+    <p class="empty-state__title">Aucun résultat</p>
+    <p class="empty-state__text">Essayez un autre mot-clé, une autre période, ou changez de catégorie.</p>
+  </div>
+  <div class="load-more" id="load-more" hidden>
+    <button type="button" class="load-more__btn" id="load-more-btn">Voir d’autres articles</button>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__below-solo">Mairie de Mandeure, 25350</span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js?v=6"></script>
+</body>
+</html>
