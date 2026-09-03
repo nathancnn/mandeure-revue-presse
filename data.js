@@ -16,6 +16,14 @@ const CATEGORIES = [
 const ARTICLES = [
   // --- Vie municipale & élections ---
   {
+    date: "2026-08-27", displayDate: "27 août 2026",
+    title: "Incendie de la Mairie de Mandeure : les services municipaux temporairement délocalisés",
+    url: "https://www.toutmontbeliard.com/2026/08/27/incendie-de-la-mairie-de-mandeure-les-services-municipaux-temporairement-delocalises/",
+    source: "ToutMontbéliard.com",
+    summary: "Après l'incendie ayant détruit une partie de la toiture de la mairie, la ville reloge temporairement ses services : les services techniques rejoignent les ateliers municipaux, tandis que l'accueil, l'état civil, l'urbanisme et le CCAS sont regroupés au centre culturel.",
+    categories: ["municipale", "securite"],
+  },
+  {
     date: "2026-03-22", displayDate: "22 mars 2026",
     title: "Élections municipales 2026, 2ème tour : résultats de Mandeure, Stéphane Podgora élu",
     url: "https://www.toutmontbeliard.com/2026/03/22/elections-municipales-2026-2eme-tour-resultats-de-mandeure-stephane-podgora-elu/",
@@ -241,6 +249,14 @@ const ARTICLES = [
   },
 
   // --- Sécurité & solidarité ---
+  {
+    date: "2026-08-25", displayDate: "25 août 2026",
+    title: "Incendie à Mandeure : l'Hôtel de Ville frappé par la foudre",
+    url: "https://www.toutmontbeliard.com/2026/08/25/incendie-a-mandeure-lhotel-de-ville-frappe-par-la-foudre/",
+    source: "ToutMontbéliard.com",
+    summary: "Dans la nuit du 24 au 25 août 2026, la foudre a frappé l'hôtel de ville de Mandeure et provoqué un incendie de toiture ; 41 pompiers ont été mobilisés, un pompier légèrement blessé et environ 200 m² de toiture détruits, entraînant la fermeture de la mairie jusqu'à nouvel ordre.",
+    categories: ["securite"],
+  },
   {
     date: "2026-06-05", displayDate: "5 juin 2026",
     title: "Accident de parapente à Mandeure : un septuagénaire coincé en contrebas de l'aire de décollage",
