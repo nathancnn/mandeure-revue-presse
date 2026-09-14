@@ -1,5 +1,5 @@
 /* Revue de presse, Ville de Mandeure.
-   Donnees mises a jour le 3 septembre 2026, periode couverte : depuis le 18 aout 2024.
+   Donnees mises a jour le 14 septembre 2026, periode couverte : depuis le 18 aout 2024.
    Chaque URL a ete verifiee individuellement ; les resumes sont rediges
    originalement, sans reprise du texte des articles sources. */
 
@@ -17,6 +17,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-09-07", displayDate: "7 septembre 2026",
+    title: "Coupure d'électricité à Mandeure",
+    url: "https://www.toutmontbeliard.com/2026/09/07/coupure-delectricite-a-mandeure-12/",
+    source: "ToutMontbéliard.com",
+    summary: "Enedis a programmé une coupure d'électricité le 8 septembre 2026 de 8h à 12h dans le secteur de la rue Raymond-de-Durfort à Mandeure, dans le cadre de travaux de maintenance du réseau.",
+    categories: ["travaux"],
+  },
   {
     date: "2026-09-01", displayDate: "1er septembre 2026",
     title: "Le nouveau principal Étienne Bertoneche prêt pour la rentrée",
