@@ -136,14 +136,16 @@ function initPressReview() {
     all.forEach((cat) => {
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "filter-pill" + (cat.id === activeFilter ? " is-active" : "");
+      btn.className = "category-chip" + (cat.id === activeFilter ? " is-active" : "");
       btn.setAttribute("aria-pressed", String(cat.id === activeFilter));
       btn.dataset.filter = cat.id;
-      if (cat.color) btn.style.setProperty("--dot-color", cat.color);
+      if (cat.color) btn.style.setProperty("--chip-color", cat.color);
       btn.innerHTML =
-        (cat.color ? '<span class="filter-pill__dot" aria-hidden="true"></span>' : "") +
-        "<span>" + cat.short + "</span>" +
-        '<span class="filter-pill__count">' + countFor(cat.id) + "</span>";
+        '<span class="category-chip__name">' +
+          (cat.color ? '<span class="category-chip__dot" aria-hidden="true"></span>' : "") +
+          cat.short +
+        "</span>" +
+        '<span class="category-chip__count">' + countFor(cat.id) + (countFor(cat.id) > 1 ? " articles" : " article") + "</span>";
       btn.addEventListener("click", () => {
         if (activeFilter === cat.id) return;
         activeFilter = cat.id;
@@ -164,16 +166,16 @@ function initPressReview() {
       .join("");
 
     return (
-      '<a class="article-card reveal" href="' + article.url + '" target="_blank" rel="noopener noreferrer" ' +
+      '<a class="tool-card reveal" href="' + article.url + '" target="_blank" rel="noopener noreferrer" ' +
       'style="--reveal-delay:' + Math.min(index, 8) * 40 + 'ms" ' +
       'aria-label="' + escapeHtml(article.title) + ", " + escapeHtml(article.source) + ", " + escapeHtml(article.displayDate) + ', ouvre un nouvel onglet">' +
-        '<div class="article-card__meta">' + tags + '<span class="article-card__date">' + article.displayDate + "</span></div>" +
-        '<p class="article-card__title">' + highlight(article.title, query) + "</p>" +
-        '<p class="article-card__summary">' + highlight(article.summary, query) + "</p>" +
-        '<div class="article-card__footer">' +
-          '<span class="article-card__source">' + article.source + "</span>" +
-          '<span class="article-card__link">Lire l’article' +
-            '<svg class="article-card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>' +
+        '<div class="tool-card__meta">' + tags + '<span class="tool-card__date">' + article.displayDate + "</span></div>" +
+        '<p class="tool-card__name">' + highlight(article.title, query) + "</p>" +
+        '<p class="tool-card__desc">' + highlight(article.summary, query) + "</p>" +
+        '<div class="tool-card__footer">' +
+          '<span class="tool-card__source">' + article.source + "</span>" +
+          '<span class="tool-card__link">Lire l’article' +
+            '<svg class="tool-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>' +
           "</span>" +
         "</div>" +
       "</a>"
@@ -295,7 +297,7 @@ function initPressReview() {
 }
 
 function initScrollReveal() {
-  const items = document.querySelectorAll(".reveal:not(.article-card)");
+  const items = document.querySelectorAll(".reveal:not(.tool-card)");
   if (!items.length) return;
 
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
