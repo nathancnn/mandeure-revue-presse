@@ -274,22 +274,14 @@ function initPressReview() {
     });
   }
 
-  // --- Last updated + refresh ---
+  // --- Last checked ---
   const lastUpdatedEl = document.getElementById("last-updated");
-  if (lastUpdatedEl && ARTICLES.length) {
-    const maxDate = ARTICLES.reduce((max, a) => (a.date > max ? a.date : max), ARTICLES[0].date);
+  if (lastUpdatedEl) {
+    const checkedDate = typeof LAST_CHECKED !== "undefined" ? LAST_CHECKED : ARTICLES.reduce((max, a) => (a.date > max ? a.date : max), ARTICLES[0].date);
     const formatted = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric" }).format(
-      new Date(maxDate + "T00:00:00")
+      new Date(checkedDate + "T00:00:00")
     );
-    lastUpdatedEl.textContent = "Dernier article ajouté le " + formatted;
-  }
-  const refreshBtn = document.getElementById("refresh-btn");
-  if (refreshBtn) {
-    refreshBtn.addEventListener("click", () => {
-      refreshBtn.classList.add("is-refreshing");
-      refreshBtn.disabled = true;
-      window.location.reload();
-    });
+    lastUpdatedEl.textContent = "Recherche effectuée le " + formatted;
   }
 
   renderFilters();
