@@ -318,3 +318,18 @@ function initScrollReveal() {
     }
   });
 }
+
+(function () {
+  if (window.parent === window) return;
+  let last = 0;
+  function post() {
+    const h = Math.ceil(document.documentElement.getBoundingClientRect().height);
+    if (h === last) return;
+    last = h;
+    window.parent.postMessage({ type: "revue-presse-height", height: h }, "*");
+  }
+  window.addEventListener("load", post);
+  window.addEventListener("resize", post);
+  if ("ResizeObserver" in window) new ResizeObserver(post).observe(document.documentElement);
+  else setInterval(post, 500);
+})();
