@@ -31,7 +31,7 @@
   --space-md: 24px;
   --space-lg: 40px;
   --space-xl: 80px;
-  --container-max: 1280px;
+  --container-max: 100%;
   --section-padding-x: 24px;
 
   --radius-card: 16px;
@@ -90,38 +90,12 @@ img { display: block; max-width: 100%; }
 }
 
 /* ==========================================================================
-   Header
-   ========================================================================== */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--color-border);
-}
-.site-header__inner {
-  display: flex;
-  align-items: center;
-  height: 60px;
-}
-.site-logo {
-  font-size: var(--text-h3);
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.site-logo__accent { color: var(--color-accent); }
-
-/* ==========================================================================
    Hero search — barre de recherche mise en avant dans la page-intro
    ========================================================================== */
 .hero-search {
   position: relative;
   margin-top: var(--space-lg);
-  max-width: 640px;
+  max-width: 820px;
 }
 .hero-search__icon {
   position: absolute;
@@ -165,7 +139,6 @@ img { display: block; max-width: 100%; }
 .hero-search__clear.is-visible { display: flex; }
 .hero-search__clear:hover { color: var(--color-ink); background: var(--color-paper-alt); }
 @media (max-width: 640px) {
-  .site-logo { font-size: 16px; }
   .hero-search__input { height: 52px; font-size: 16px; padding: 0 48px 0 48px; }
   .hero-search__icon { left: 18px; width: 18px; height: 18px; }
 }
@@ -173,28 +146,19 @@ img { display: block; max-width: 100%; }
 /* ==========================================================================
    Page intro
    ========================================================================== */
-.page-intro { padding: var(--space-xl) 0 var(--space-lg); }
-.page-intro__eyebrow {
-  display: inline-block;
-  font-size: var(--text-body-12);
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: var(--space-sm);
-}
+.page-intro { padding: var(--space-lg) 0; }
 .page-intro__title {
   font-size: var(--text-display);
   line-height: var(--leading-tight);
   letter-spacing: -1.5px;
   font-weight: 500;
-  max-width: 900px;
+  max-width: 1100px;
 }
 .page-intro__lead {
   margin-top: var(--space-md);
   font-size: var(--text-h3);
   color: var(--color-ink-soft);
-  max-width: 640px;
+  max-width: 820px;
 }
 .page-intro__update {
   margin-top: var(--space-sm);
@@ -383,6 +347,7 @@ img { display: block; max-width: 100%; }
 }
 @media (min-width: 700px) { .tools-grid--articles { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1080px) { .tools-grid--articles { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1500px) { .tools-grid--articles { grid-template-columns: repeat(4, 1fr); } }
 
 .tool-card {
   position: relative;
