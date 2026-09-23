@@ -5,20 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Revue de presse · Ville de Mandeure</title>
 <meta name="description" content="Recueil des articles de presse consacrés à la ville de Mandeure (25350), classés par catégorie, depuis août 2024.">
-<link rel="stylesheet" href="styles.css?v=15">
+<link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container site-header__inner">
     <span class="site-logo">Revue de presse<span class="site-logo__accent">.</span></span>
-    <div class="site-search">
-      <label class="sr-only" for="search-input">Rechercher un article par mot-clé</label>
-      <input type="search" id="search-input" class="site-search__input" placeholder="Rechercher un article…" autocomplete="off">
-      <button type="button" class="site-search__clear" id="search-clear" aria-label="Effacer la recherche">
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-    </div>
   </div>
 </header>
 
@@ -28,13 +21,17 @@
       <span class="page-intro__eyebrow">Ville de Mandeure · 25350</span>
       <h1 class="page-intro__title">Ce que la presse a écrit sur Mandeure.</h1>
       <p class="page-intro__lead">Recueil des articles parus dans la presse locale et régionale depuis août 2024, classés par catégorie et vérifiés individuellement.</p>
-      <div class="page-intro__update">
-        <span class="page-intro__update-text" id="last-updated">Mise à jour…</span>
-        <button type="button" class="btn btn--secondary" id="refresh-btn">
-          <svg class="btn__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 4v5h-5"/></svg>
-          Actualiser
+
+      <div class="hero-search">
+        <label class="sr-only" for="search-input">Rechercher un article par mot-clé</label>
+        <svg class="hero-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="search-input" class="hero-search__input" placeholder="Rechercher un article, un sujet, une source…" autocomplete="off">
+        <button type="button" class="hero-search__clear" id="search-clear" aria-label="Effacer la recherche">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
+
+      <p class="page-intro__update" id="last-updated">Recherche en cours…</p>
     </section>
 
     <section class="tools-section reveal">
@@ -78,6 +75,6 @@
 </main>
 
 <script src="data.js"></script>
-<script src="script.js?v=7"></script>
+<script src="script.js?v=8"></script>
 </body>
 </html>
