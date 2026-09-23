@@ -331,5 +331,5 @@ function initScrollReveal() {
   window.addEventListener("load", post);
   window.addEventListener("resize", post);
   if ("ResizeObserver" in window) new ResizeObserver(post).observe(document.documentElement);
-  else setInterval(post, 500);
+  setInterval(function () { last = 0; post(); }, 1000);
 })();
