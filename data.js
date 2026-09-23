@@ -1,7 +1,10 @@
 /* Revue de presse, Ville de Mandeure.
-   Donnees mises a jour le 14 septembre 2026, periode couverte : depuis le 18 aout 2024.
+   Periode couverte : depuis le 18 aout 2024.
    Chaque URL a ete verifiee individuellement ; les resumes sont rediges
-   originalement, sans reprise du texte des articles sources. */
+   originalement, sans reprise du texte des articles sources.
+   LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
+
+const LAST_CHECKED = "2026-09-23";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
