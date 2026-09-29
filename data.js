@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-09-28";
+const LAST_CHECKED = "2026-09-29";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -1684,5 +1684,14 @@ const ARTICLES = [
     source: "Est Républicain",
     summary: "L'association Contre Vents et Marées organise une tombola à Mandeure pour soutenir Gabriel, un enfant de 4 ans très malade.",
     categories: ["association", "evenement"],
+  },
+  // --- Mise a jour du 29 septembre 2026 ---
+  {
+    date: "2026-09-28", displayDate: "28 septembre 2026",
+    title: "Grève écoles et services périscolaires de Mandeure mardi 29 septembre 2026",
+    url: "https://www.toutmontbeliard.com/2026/09/28/greve-ecoles-et-services-periscolaires-de-mandeure-mardi-29-septembre-2026/",
+    source: "ToutMontbéliard.com",
+    summary: "La municipalité de Mandeure a détaillé les fermetures partielles de la restauration scolaire et de l'accueil périscolaire attendues dans les écoles Fontenotte, Estelles, et les maternelles du Breuil et Bataille, à l'occasion du mouvement de grève national du 29 septembre 2026.",
+    categories: ["ecole"],
   },
 ];
