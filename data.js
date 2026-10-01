@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-09-30";
+const LAST_CHECKED = "2026-10-01";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -20,6 +20,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-09-28", displayDate: "28 septembre 2026",
+    title: "Grève écoles et services périscolaires de Mandeure mardi 29 septembre 2026",
+    url: "https://www.toutmontbeliard.com/2026/09/28/greve-ecoles-et-services-periscolaires-de-mandeure-mardi-29-septembre-2026/",
+    source: "ToutMontbéliard.com",
+    summary: "La mairie de Mandeure a détaillé les conséquences de la grève nationale du 29 septembre sur les écoles de la commune, avec cantines et accueils périscolaires fermés ou perturbés selon les établissements.",
+    categories: ["ecole"],
+  },
   {
     date: "2026-09-07", displayDate: "7 septembre 2026",
     title: "Coupure d'électricité à Mandeure",
