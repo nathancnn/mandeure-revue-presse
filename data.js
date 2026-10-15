@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-10-14";
+const LAST_CHECKED = "2026-10-15";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -20,6 +20,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-10-13", displayDate: "13 octobre 2026",
+    title: "Trois cambriolages constatés à Mandeure, Audeux et Roche-lez-Beaupré en une journée",
+    url: "https://www.macommune.info/trois-cambriolages-constates-a-mandeure-audeux-et-roche-lez-beaupre-en-une-journee/",
+    source: "macommune.info",
+    summary: "Le lundi 12 octobre 2026, une habitation de Mandeure a été cambriolée en journée, en l'absence de son propriétaire : le ou les auteurs ont forcé le volet d'une cave puis une fenêtre pour s'introduire et dérober des bijoux à l'étage.",
+    categories: ["securite"],
+  },
   {
     date: "2026-09-28", displayDate: "28 septembre 2026",
     title: "Grève écoles et services périscolaires de Mandeure mardi 29 septembre 2026",
