@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-10-16";
+const LAST_CHECKED = "2026-10-17";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -20,6 +20,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-10-13", displayDate: "13 octobre 2026",
+    title: "Mandeure : un homme transporté à l'hôpital après une dispute avec son ex-conjointe",
+    url: "https://www.macommune.info/mandeure-un-homme-transporte-a-lhopital-apres-une-dispute-avec-son-ex-conjointe/",
+    source: "macommune.info",
+    summary: "Une dispute survenue le lundi 12 octobre 2026 au soir entre un homme et son ex-conjointe a dégénéré, l'homme ayant été frappé à la tête avant d'être conduit à l'hôpital de Trévenans ; une enquête de gendarmerie est en cours pour établir les circonstances exactes.",
+    categories: ["securite"],
+  },
   {
     date: "2026-10-13", displayDate: "13 octobre 2026",
     title: "Trois cambriolages constatés à Mandeure, Audeux et Roche-lez-Beaupré en une journée",
