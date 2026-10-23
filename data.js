@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-10-22";
+const LAST_CHECKED = "2026-10-23";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -20,6 +20,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-10-14", displayDate: "14 octobre 2026",
+    title: "À Mandeure, cinq auteurs jeunesse à la rencontre des élèves et des lecteurs",
+    url: "https://www.toutmontbeliard.com/2026/10/14/a-mandeure-cinq-auteurs-jeunesse-a-la-rencontre-des-eleves-et-des-lecteurs/",
+    source: "ToutMontbéliard.com",
+    summary: "Du 6 au 8 octobre 2026, cinq auteurs et autrices jeunesse se sont rendus à Mandeure dans le cadre du projet « Livres complices » porté par l'ADeC avec le soutien de la Ville, pour rencontrer les élèves de l'école des Estelles et du collège Jean-Paul-Guyot ainsi que le public de la médiathèque Le Bélieu.",
+    categories: ["ecole", "culture", "evenement"],
+  },
   {
     date: "2026-10-13", displayDate: "13 octobre 2026",
     title: "Mandeure : un homme transporté à l'hôpital après une dispute avec son ex-conjointe",
