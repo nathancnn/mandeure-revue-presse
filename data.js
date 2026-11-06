@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-11-05";
+const LAST_CHECKED = "2026-11-06";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -20,6 +20,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-11-04", displayDate: "4 novembre 2026",
+    title: "Grève écoles et services périscolaires de Mandeure jeudi 5 novembre 2026",
+    url: "https://www.toutmontbeliard.com/2026/11/04/greve-ecoles-et-services-periscolaires-de-mandeure-jeudi-5-novembre-2026/",
+    source: "ToutMontbéliard.com",
+    summary: "La municipalité a détaillé les perturbations attendues dans les écoles de Mandeure pour la grève nationale du jeudi 5 novembre 2026 : cantine et accueil périscolaire fermés ou réduits dans plusieurs établissements, la maternelle Bataille étant la seule école où le temps de classe lui-même sera affecté.",
+    categories: ["ecole"],
+  },
   {
     date: "2026-10-14", displayDate: "14 octobre 2026",
     title: "À Mandeure, cinq auteurs jeunesse à la rencontre des élèves et des lecteurs",
