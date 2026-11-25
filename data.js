@@ -4,7 +4,7 @@
    originalement, sans reprise du texte des articles sources.
    LAST_CHECKED est mis a jour a chaque recherche (meme sans nouvel article). */
 
-const LAST_CHECKED = "2026-11-24";
+const LAST_CHECKED = "2026-11-25";
 
 const CATEGORIES = [
   { id: "municipale", label: "Vie municipale & élections", short: "Municipale", color: "#1d4a86" },
@@ -20,6 +20,14 @@ const CATEGORIES = [
 ];
 
 const ARTICLES = [
+  {
+    date: "2026-11-18", displayDate: "18 novembre 2026",
+    title: "Deux piétons percutés par des véhicules dans le Pays de Montbéliard",
+    url: "https://www.ici.fr/bourgogne-franche-comte/doubs-25/fesches-le-chatel/deux-pietons-percutes-par-des-vehicules-dans-le-pays-de-montbeliard-2698333",
+    source: "ICI (ex-France Bleu)",
+    summary: "Dans la soirée du mercredi 18 novembre 2026, un automobiliste a percuté un piéton sur un passage piéton à Mandeure avant de prendre la fuite ; les gendarmes, déjà mobilisés quelques heures plus tôt pour un accident similaire à Fesches-le-Châtel, ont rattrapé le conducteur à son domicile.",
+    categories: ["securite"],
+  },
   {
     date: "2026-11-04", displayDate: "4 novembre 2026",
     title: "Grève écoles et services périscolaires de Mandeure jeudi 5 novembre 2026",
